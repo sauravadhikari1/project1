@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgba(217, 215, 215, 0.908);
+}
+.navbar{
+    /* margin: 1vw 5vw; */
+    /* width:90%; */
+    display: flex;
+    background-color: rgb(57, 57, 58);
+    justify-content: space-between;
+    height: 8vh;
+    align-items: center;
+    border: 0.5px solid black;
+    /* border-radius: 8px; */
+    color: white;
+    padding: 0 5vw ;
+}
+.body{
+    overflow: scroll;
+}
+.progress{
+    background-color: red;
+    height: 2px;
+    animation: load 1s ease-in-out 1;
+}
+@keyframes load {
+0%{
+    width: 0;
+
+}
+50%{
+    width: 90vw;
+}
+100%{
+    width: 100vw;
+}
+}
+.items{
+    padding-right: 20px;
+    
+}
+.navbar .items ul li {
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .items ul {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    
+}
+.navbar .logo{
+    margin-left: 1.5vw;
+}
+a:hover{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.slider img{
+    height: 70vh;
+    width: 100vw;
+    /* display: flex;
+    justify-content: center;
+} */
+
+}
+.slider{
+    position: relative;
+}
+
+.slider > div{
+   position: absolute; 
+   background:rgb(88, 86, 86);
+   width: 30vw;
+   color: white;
+   top:25vh;
+   left: 35vw;
+   border-radius: 10px;
+   opacity: 0.8;
+   height:12vw;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   padding: 30px 0;
+   text-align: center;
+
+}
+/* .slider img{
+    height: 100%;
+    width: 100vw;
+} */
+
+
+/* Slideshow container */
+.card{
+    width: 50vh;
+    height: 20vh;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+}
+
