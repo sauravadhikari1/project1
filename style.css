@@ -21,7 +21,7 @@ body{
     padding: 0 5vw ;
 }
 .body{
-    background-color: rgb(212, 206, 199);
+    background-color: rgb(255, 255, 255);
 }
 .progress{
     background-color: red;
@@ -34,7 +34,7 @@ body{
 
 }
 50%{
-    width: 90vw;
+    width: 40vw;
 }
 100%{
     width: 100vw;
@@ -78,9 +78,9 @@ a:hover{
 
 .slider > div{
  position: absolute;  
-   background:rgb(88, 86, 86);
+   background:rgb(73, 73, 73);
    width: 30vw;
-   color: white;
+   color: rgb(224, 224, 224);
    top:25vh;
    left: 35vw;
    border-radius: 10px;
@@ -119,6 +119,7 @@ a:hover{
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px grey;
     align-items: center;
+    /* flex-wrap: wrap; */
     
     
 }
@@ -129,7 +130,7 @@ a:hover{
 .flist{
     width: 300px;
     height: 200px;
-    background-color: olivedrab;
+    background-color: rgba(106, 142, 35, 0.623);
     border-radius: 10px;
     padding: 30px;
     margin:10px;
@@ -141,17 +142,24 @@ a:hover{
 }
 .destination{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    /* flex-direction: column; */
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items: center;
+    gap:50px;
+    padding-bottom: 40px;
+    
 }
 .card2{
-    height: 40vw;
-    width: 65vh;
+    height: 500px;
+    width: 350px;
     /* border: 1px solid black; */
     border-radius: 20px;
     box-shadow: 1px 1px 1px 1px grey;
     margin-top: 50px;
+flex-wrap: wrap;
+overflow:inherit;
+margin: 50px 100px;    
 }
 .card2 .cardimage img{
 width: 100%;
@@ -176,7 +184,7 @@ align-items: center;
     
 }
 .button button{
-    width: 30vh;
+    width: 100px;
     height: 26px;
     background-color: rgb(156, 124, 124);
     border-radius: 10px;
@@ -191,3 +199,59 @@ align-items: center;
     color: rgb(255, 250, 250);
     font-size: 30px;
 }
+
+.details{
+    height: 150px;
+    background-color:rgba(0, 255, 255, 0.503);
+    /* align-content: center; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap:10px;
+     /* margin-top:20px; */
+    }
+    
+    input[type="text" ]{
+        border-radius: 10px;
+        height: 30px;
+        padding-left: 10px;
+        
+
+    }
+    input[type="text" ]{
+        border-radius: 10px;
+        height: 30px;
+        padding-left: 10px;
+        
+
+    }
+    input[type="email" ]{
+        border-radius: 10px;
+        height: 30px;
+        padding-left: 10px;
+        
+
+    }
+    input[type="submit" ]{
+        border-radius: 10px;
+        height: 30px;
+        width: 100px;
+        padding: 0 10px;
+        margin-left: 10px;
+        background-color: rgb(171, 171, 171);
+        
+
+    }
+    
+ .center{
+    background-color: black;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+    
+    
